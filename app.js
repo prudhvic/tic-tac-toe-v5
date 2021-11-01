@@ -125,7 +125,7 @@ let gameOver = () => {
   if (
     games[0][0] > 0 &&
     games[0][0] == games[1][1] &&
-    games[1][1] == games[2][3]
+    games[1][1] == games[2][2]
   ) {
     return games[0][0];
   }
