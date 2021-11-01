@@ -149,9 +149,10 @@ header h1 {
 }
 .winner {
   font-size: 1.1rem;
-  white-space:nowrap;
+  white-space: nowrap;
 }
 .winner-modal {
   padding: 1em;
-  width:100%;
+  max-width: 300px;
+  width: 100%;
 }

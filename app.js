@@ -103,7 +103,9 @@ let startgame = (e) => {
   let board = document.querySelector(".board");
   console.log(board);
   board.style.display = "grid";
-  // window.location.reload();
+  if (isgameover) {
+    window.location.reload();
+  }
 };
 btnStart.addEventListener("click", startgame);
 let gameOver = () => {
