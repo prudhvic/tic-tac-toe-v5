@@ -9,6 +9,7 @@ let btnStart = document.querySelector("#btn-start");
 // let playerName1 = document.querySelector(".player_1");
 // let playerName2 = document.querySelector(".player_2");
 let currentPlayer = 1;
+let isgameover = false;
 console.log(btnStart);
 let players = [
   {
@@ -102,7 +103,7 @@ let startgame = (e) => {
   let board = document.querySelector(".board");
   console.log(board);
   board.style.display = "grid";
-  window.location.reload();
+  // window.location.reload();
 };
 btnStart.addEventListener("click", startgame);
 let gameOver = () => {
@@ -148,8 +149,11 @@ let declareWinner = (winnerId) => {
     return;
   }
   if (winnerId == -1) {
+    isgameover = true;
     alert("Draw");
+    return;
   }
+  isgameover = true;
   let winner = players[winnerId - 1].name;
   backdrop.style.display = "block";
   modal.style.display = "block";
