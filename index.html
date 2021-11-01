@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac toe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="backdrop"></div>
+    <header>
+      <h1>Tic tac toe</h1>
+    </header>
+    <main>
+      <div class="modal">
+        <h2>Type your details</h2>
+        <form>
+          <div class="form-control">
+            <label for="player-name">Enter your name</label>
+            <input type="text" name="playerName" id="player-name" />
+          </div>
+          <div class="actions">
+            <button type="button" class="btn btn-cancel">cancel</button>
+            <button type="submit" class="btn btn-confirm">confirm</button>
+          </div>
+        </form>
+      </div>
+      <div class="start-game">
+        <button class="btn btn-confirm" id="btn-start">start game</button>
+      </div>
+      <section class="player_details">
+        <div class="players">
+          <div>
+            <h2 class="player_1">Player1:</h2>
+            <button class="btn" data-player="1">edit</button>
+          </div>
+          <div>
+            <h2 class="player_2">player2:</h2>
+            <button class="btn" data-player="2">edit</button>
+          </div>
+        </div>
+      </section>
+      <section class="game">
+        <ul class="board">
+          <li data-row="1" data-col="1"></li>
+          <li data-row="1" data-col="2"></li>
+          <li data-row="1" data-col="3"></li>
+          <li data-row="2" data-col="1"></li>
+          <li data-row="2" data-col="2"></li>
+          <li data-row="2" data-col="3"></li>
+          <li data-row="3" data-col="1"></li>
+          <li data-row="3" data-col="2"></li>
+          <li data-row="3" data-col="3"></li>
+        </ul>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
