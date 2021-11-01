@@ -98,14 +98,11 @@ pads.forEach((pad) => {
   pad.addEventListener("click", handlePad);
 });
 
-function resetgame() {
-  window.location.reload();
-}
 let startgame = (e) => {
   let board = document.querySelector(".board");
   console.log(board);
   board.style.display = "grid";
-  resetgame();
+  window.location.reload();
 };
 btnStart.addEventListener("click", startgame);
 let gameOver = () => {
